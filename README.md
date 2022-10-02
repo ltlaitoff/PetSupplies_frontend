@@ -1,4 +1,4 @@
-[![wakatime](https://wakatime.com/badge/user/8d08f782-1e26-465b-80a6-182bffe3949d/project/8d80898e-d763-44a3-ac5d-bd8dc96cb481.svg&kill_cache=1)](https://wakatime.com/badge/user/8d08f782-1e26-465b-80a6-182bffe3949d/project/8d80898e-d763-44a3-ac5d-bd8dc96cb481)
+[![wakatime](https://wakatime.com/badge/user/8d08f782-1e26-465b-80a6-182bffe3949d/project/8d80898e-d763-44a3-ac5d-bd8dc96cb481.svg?kill_cache=1)](https://wakatime.com/badge/user/8d08f782-1e26-465b-80a6-182bffe3949d/project/8d80898e-d763-44a3-ac5d-bd8dc96cb481)
 
 # PetSupplies frontend
 

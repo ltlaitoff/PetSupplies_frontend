@@ -3,7 +3,7 @@
 ### Features
 
 - [ ] **website:** Remove default vite-setup vue-components [#4](https://github.com/ltlaitoff/PetSupplies_frontend/issues/4)
-- [ ] **style:** Imported all css variables which will be needed [#2](https://github.com/ltlaitoff/PetSupplies_frontend/issues/2)
+- [x] **style:** Imported all css variables which will be needed [#2](https://github.com/ltlaitoff/PetSupplies_frontend/issues/2)
 
 ### Dependency:
 

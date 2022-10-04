@@ -2,7 +2,7 @@
 
 ### Features
 
-- [ ] **website:** Remove default vite-setup vue-components [#4](https://github.com/ltlaitoff/PetSupplies_frontend/issues/4)
+- [x] **website:** Remove default vite-setup vue-components [#4](https://github.com/ltlaitoff/PetSupplies_frontend/issues/4)
 - [x] **style:** Install all the necessary elements to start [#7](https://github.com/ltlaitoff/PetSupplies_frontend/issues/7)
 
 ### Dependency:

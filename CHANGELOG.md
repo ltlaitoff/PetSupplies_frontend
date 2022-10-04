@@ -10,7 +10,7 @@
 - [x] **eslint:** Configured eslint and connected with prettier (#-)
 - [x] **prettier:** Configued prettier (#-)
 - [x] **vue-vite:** Installed vue-vite support (#-)
-- [ ] **scss:** Installed dependency for support scss [#3](https://github.com/ltlaitoff/PetSupplies_frontend/issues/3)
+- [x] **scss:** Installed dependency for support scss [#3](https://github.com/ltlaitoff/PetSupplies_frontend/issues/3)
 
 ### Deploy:
 

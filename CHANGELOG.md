@@ -2,7 +2,7 @@
 
 ### Features
 
-- [ ] **router:** Created router with home, catalog and shopping-cart pages [#19](https://github.com/ltlaitoff/PetSupplies_frontend/issues/19)
+- [x] **router:** Created router with home, catalog and shopping-cart pages [#19](https://github.com/ltlaitoff/PetSupplies_frontend/issues/19)
 - [ ] **website:** Created Header [#16](https://github.com/ltlaitoff/PetSupplies_frontend/issues/16)
 - [ ] **website:** Created Footer [#18](https://github.com/ltlaitoff/PetSupplies_frontend/issues/18)
 - [ ] **website** switch language [#21](https://github.com/ltlaitoff/PetSupplies_frontend/issues/21)

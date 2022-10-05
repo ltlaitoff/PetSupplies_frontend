@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
-<template>PetSipplies</template>
+<template><router-view /></template>
 
 <style></style>

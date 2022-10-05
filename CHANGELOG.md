@@ -1,3 +1,30 @@
+## NEXT [0.1.0]() (date)
+
+### Features
+
+- [ ] **router:** Created router with home, catalog and shopping-cart pages [#19](https://github.com/ltlaitoff/PetSupplies_frontend/issues/19)
+- [ ] **website:** Created Header [#16](https://github.com/ltlaitoff/PetSupplies_frontend/issues/16)
+- [ ] **website:** Created Footer [#18](https://github.com/ltlaitoff/PetSupplies_frontend/issues/18)
+- [ ] **website** switch language [#21](https://github.com/ltlaitoff/PetSupplies_frontend/issues/21)
+- [ ] **website** switch theme [#22](https://github.com/ltlaitoff/PetSupplies_frontend/issues/22)
+
+#### Components
+
+- [ ] **Logo:** Created Logo component [#12](https://github.com/ltlaitoff/PetSupplies_frontend/issues/12)
+
+- [ ] **Search:** Created Search component [#13](https://github.com/ltlaitoff/PetSupplies_frontend/issues/13)
+- [ ] **LanguageSwitch:** Created LanguageSwitch component [#14](https://github.com/ltlaitoff/PetSupplies_frontend/issues/14)
+- [ ] **Button:** Created Button component with two styles: [#15](https://github.com/ltlaitoff/PetSupplies_frontend/issues/15)
+
+  - **Default:** Button without border
+  - **Border:** Button with border
+
+- [ ] **ThemeSwitcher:** Created ThemeSwitcher component [#17](https://github.com/ltlaitoff/PetSupplies_frontend/issues/17)
+
+### Utils
+
+- [ ] **Storage:** Created util for saving data into browser storage [#20](https://github.com/ltlaitoff/PetSupplies_frontend/issues/20)
+
 ## [0.0.0](https://github.com/ltlaitoff/PetSupplies_frontend/compare/fa1f4888e44d87838be3be4f0b7f21448ccbcb59...v0.0.0) (05-10-2022)
 
 ### Features

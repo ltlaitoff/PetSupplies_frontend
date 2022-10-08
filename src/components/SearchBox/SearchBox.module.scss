@@ -1,0 +1,46 @@
+.label {
+	position: relative;
+	display: flex;
+}
+
+.iconButton {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+
+	transform: translateY(-50%);
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.input {
+	padding: 8px 0 8px 34px;
+	width: 430px;
+	height: 35px;
+
+	border: none;
+	background: var(--color-light-gray-0);
+	border-radius: 5px;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	&::placeholder {
+		color: var(--color-light-gray-4);
+	}
+}
+
+.inputError {
+	transition: outline-color 0.1s ease-in !important ;
+
+	outline: 2px solid red !important;
+}
+
+.input:hover:not(.input:focus),
+.iconButton:hover ~ .input:not(.input:focus) {
+	transition: outline-width 0.1s ease-in-out;
+
+	outline: 2px solid var(--color-light-gray-1);
+}

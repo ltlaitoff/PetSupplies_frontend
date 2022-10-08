@@ -4,6 +4,8 @@ const HomePage = () => import('../pages/HomePage/HomePage.vue')
 const CatalogPage = () => import('../pages/CatalogPage/CatalogPage.vue')
 const NotFoundPage = () => import('../pages/NotFoundPage/NotFoundPage.vue')
 const ShoppingCart = () => import('../pages/ShoppingCart/ShoppingCart.vue')
+const PerformancePage = () =>
+	import('../pages/PerformancePage/PerformancePage.vue')
 
 const routes = [
 	{
@@ -20,6 +22,11 @@ const routes = [
 		path: '/shopping-cart',
 		name: 'shoppingCart',
 		component: ShoppingCart
+	},
+	{
+		path: '/perf',
+		name: 'Performance Test',
+		component: PerformancePage
 	},
 	{
 		path: '/:catchAll(.*)',

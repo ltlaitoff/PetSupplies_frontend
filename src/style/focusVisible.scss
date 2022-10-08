@@ -1,0 +1,8 @@
+*:focus-visible {
+	transition: 0ms !important;
+
+	outline-width: 3px;
+	outline-style: solid;
+	outline-color: var(--color-focus-visible);
+	border: 10px;
+}

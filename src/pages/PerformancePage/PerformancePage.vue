@@ -1,7 +1,11 @@
+<script setup lang="ts">
+import MainLogo from '../../components/LogoMain/LogoMain.vue'
+</script>
+
 <template>
-	<div></div>
+	<div :class="$style.perf">
+		<MainLogo />
+	</div>
 </template>
 
-<script setup lang="ts"></script>
-
-<style></style>
+<style module src="./PerformancePage.module.scss"></style>

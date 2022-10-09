@@ -1,0 +1,65 @@
+.main {
+	position: relative;
+
+	display: inline-flex;
+	flex-direction: row;
+	column-gap: 12px;
+}
+
+.item {
+	width: 25px;
+	display: inline-block;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: var(--color-light-gray-4);
+
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	transition: color 0.3s ease-out;
+
+	&:hover {
+		color: var(--color-gray);
+	}
+}
+
+.activeItem {
+	color: var(--color-gray);
+
+	&:hover {
+		color: var(--color-light-gray-4);
+	}
+}
+
+.divider {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 15px;
+	width: 1px;
+
+	transform: translate(-50%, -50%);
+	background: var(--color-light-gray-1);
+}
+
+.substrate {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 29px;
+	height: 21px;
+
+	transition: left 0.3s ease-out;
+	background: var(--color-light-yellow);
+	border-radius: 4px;
+	z-index: -1;
+}
+
+.substrateSecond {
+	left: calc(100% - 25px - 2px);
+}

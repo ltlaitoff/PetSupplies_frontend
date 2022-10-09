@@ -36,6 +36,10 @@ function onSubmit() {
 	emit('submit', inputText.value)
 }
 
+function onKeyDownEnter() {
+	onSubmit()
+}
+
 watch(inputText, async (newText: string) => {
 	if (newText === '') {
 		inputError.value = true
@@ -49,7 +53,7 @@ watch(inputText, async (newText: string) => {
 <template>
 	<form
 		:class="$style.form"
-		@submit="onSubmit"
+		@submit.prevent="onSubmit"
 	>
 		<label :class="$style.label">
 			<button
@@ -63,10 +67,10 @@ watch(inputText, async (newText: string) => {
 			<input
 				ref="inputTemplate"
 				v-model="inputText"
-				:class="[$style.input, `${inputError ? $style.inputError : ''}`]"
+				:class="[$style.input, { [$style.inputError]: inputError }]"
 				placeholder="Write something"
+				@keydown.enter.prevent="onKeyDownEnter"
 			/>
-			{{ inputText }}
 		</label>
 	</form>
 </template>

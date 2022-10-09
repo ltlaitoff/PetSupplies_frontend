@@ -10,11 +10,11 @@
 
 #### Components
 
-- [ ] **Logo:** Created Logo component [#12](https://github.com/ltlaitoff/PetSupplies_frontend/issues/12)
+- [x] **Logo:** Created Logo component [#12](https://github.com/ltlaitoff/PetSupplies_frontend/issues/12)
 
-- [ ] **Search:** Created Search component [#13](https://github.com/ltlaitoff/PetSupplies_frontend/issues/13)
-- [ ] **LanguageSwitch:** Created LanguageSwitch component [#14](https://github.com/ltlaitoff/PetSupplies_frontend/issues/14)
-- [ ] **Button:** Created Button component with two styles: [#15](https://github.com/ltlaitoff/PetSupplies_frontend/issues/15)
+- [x] **Search:** Created Search component [#13](https://github.com/ltlaitoff/PetSupplies_frontend/issues/13)
+- [x] **LanguageSwitch:** Created LanguageSwitch component [#14](https://github.com/ltlaitoff/PetSupplies_frontend/issues/14)
+- [x] **Button:** Created Button component with two styles: [#15](https://github.com/ltlaitoff/PetSupplies_frontend/issues/15)
 
   - **Default:** Button without border
   - **Border:** Button with border

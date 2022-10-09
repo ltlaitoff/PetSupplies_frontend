@@ -62,8 +62,6 @@ describe('ButtonBase', () => {
 
 		button.element.disabled = false
 
-		console.log(button.html())
-
 		await button.trigger('click')
 
 		expect(wrapper.emitted()).not.toHaveProperty('click')

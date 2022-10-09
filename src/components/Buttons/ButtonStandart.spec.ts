@@ -56,7 +56,7 @@ describe('ButtonStandart', () => {
 		const wrapper = shallowMount(ButtonStandart)
 		const button = wrapper.findComponent(ButtonBase)
 
-		button.vm.$emit('click', { preventDefault: vi.fn() })
+		button.vm.$emit('click')
 
 		await wrapper.vm.$nextTick()
 
@@ -71,7 +71,7 @@ describe('ButtonStandart', () => {
 		})
 		const button = wrapper.findComponent(ButtonBase)
 
-		button.vm.$emit('click', { preventDefault: vi.fn() })
+		button.vm.$emit('click')
 
 		await wrapper.vm.$nextTick()
 

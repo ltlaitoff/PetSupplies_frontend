@@ -18,7 +18,7 @@ function onClick() {
 	<ButtonBase
 		variant="standart"
 		:disabled="disabled"
-		@click.prevent="onClick"
+		@click="onClick"
 	>
 		<slot />
 	</ButtonBase>

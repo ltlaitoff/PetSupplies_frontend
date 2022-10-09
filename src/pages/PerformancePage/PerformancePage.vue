@@ -2,6 +2,7 @@
 import MainLogo from '../../components/LogoMain/LogoMain.vue'
 import SearchBox from '../../components/SearchBox/SearchBox.vue'
 import LanguageSwitch from '../../components/LanguageSwitch/LanguageSwitch.vue'
+import ButtonBase from '../../components/Buttons/ButtonBase.vue'
 
 function onSearchBoxSubmit(value: string) {
 	console.log(`SearchBox @submit: ${value}`)
@@ -19,6 +20,12 @@ function onLanguageChange(value: { id: number; languageCode: string }) {
 		<SearchBox @submit="onSearchBoxSubmit" />
 		<div :class="$style.divider" />
 		<LanguageSwitch @change="onLanguageChange" />
+		<div :class="$style.divider" />
+
+		<ButtonBase variant="standart">Sign in</ButtonBase>
+		<div :class="$style.divider" />
+
+		<ButtonBase variant="outline">Sign up</ButtonBase>
 	</div>
 </template>
 

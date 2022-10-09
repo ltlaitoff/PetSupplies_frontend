@@ -8,10 +8,6 @@ const props = defineProps({
 
 const emits = defineEmits({
 	change({ id, languageCode }: LanguageType) {
-		if (id !== 0 && id !== 1) {
-			console.log('1')
-		}
-
 		if (id < 0 || id > 2) {
 			console.warn('LanguageSwicth: not correct change emit id')
 			return false

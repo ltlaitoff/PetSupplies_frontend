@@ -1,0 +1,61 @@
+.main {
+	position: relative;
+	padding: 6px 6px 6px 8px;
+
+	width: 90px;
+	height: 34px;
+
+	background: var(--color-light-gray-0);
+	border-radius: 18.5px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item {
+	width: 20px;
+	display: flex;
+	align-items: center;
+	border: none;
+	transition: fill 0.3s ease-out;
+
+	fill: var(--color-light-gray-1);
+	background-color: transparent;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.item22 {
+	width: 22px;
+}
+
+.activeItem {
+	fill: var(--color-gray);
+}
+
+.substrate {
+	left: calc(38% - 28px - 3px);
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	left: 0%;
+
+	transition: left 0.3s ease-out;
+	background: var(--color-light-yellow);
+	border-radius: 50%;
+
+	z-index: 1;
+
+	&-0 {
+		left: calc(0% + 3px);
+	}
+
+	&-1 {
+		left: calc(50% - 28px / 2);
+	}
+
+	&-2 {
+		left: calc(100% - 28px - 3px);
+	}
+}

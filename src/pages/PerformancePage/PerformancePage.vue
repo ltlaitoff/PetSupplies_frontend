@@ -4,6 +4,7 @@ import SearchBox from '../../components/SearchBox/SearchBox.vue'
 import LanguageSwitch from '../../components/LanguageSwitch/LanguageSwitch.vue'
 import ButtonOutline from '../../components/Buttons/ButtonOutline.vue'
 import ButtonStandart from '../../components/Buttons/ButtonStandart.vue'
+import ThemeSwith from '../../components/ThemeSwith/ThemeSwith.vue'
 
 function onSearchBoxSubmit(value: string) {
 	console.log(`SearchBox @submit: ${value}`)
@@ -11,6 +12,10 @@ function onSearchBoxSubmit(value: string) {
 
 function onLanguageChange(value: { id: number; languageCode: string }) {
 	console.log(`Language switch: ${JSON.stringify(value)}`)
+}
+
+function onThemeSwithChange(value: { id: number; type: string }) {
+	console.log(`ThemeSwitch: ${JSON.stringify(value)}`)
 }
 </script>
 
@@ -27,6 +32,9 @@ function onLanguageChange(value: { id: number; languageCode: string }) {
 		<div :class="$style.divider" />
 
 		<ButtonOutline>Sign up</ButtonOutline>
+		<div :class="$style.divider" />
+		<ThemeSwith @change="onThemeSwithChange" />
+		<ThemeSwith :default-theme-id="1" />
 	</div>
 </template>
 

@@ -49,13 +49,14 @@
 
 .substrate {
 	position: absolute;
-	top: -2px;
+	top: 50%;
 	left: -2px;
 	width: 29px;
 	height: 21px;
 
 	transition: left 0.3s ease-out;
 	background: var(--color-light-yellow);
+	transform: translateY(-50%);
 	border-radius: 4px;
 	z-index: -1;
 }

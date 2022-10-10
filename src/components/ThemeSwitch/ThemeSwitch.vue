@@ -2,7 +2,7 @@
 /// <reference types="vite-svg-loader" />
 
 import { ref } from 'vue'
-import DATA from './ThemeSwith.data'
+import DATA from './ThemeSwitch.data'
 
 const props = defineProps({
 	defaultThemeId: { type: Number, required: false, default: 0 }
@@ -56,4 +56,4 @@ function onItemClick(id: number) {
 	</div>
 </template>
 
-<style module src="./ThemeSwith.module.scss"></style>
+<style module src="./ThemeSwitch.module.scss"></style>

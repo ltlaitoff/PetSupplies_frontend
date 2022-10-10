@@ -1,9 +1,9 @@
 /// <reference types="vite-svg-loader" />
 
-import DarkIcon from '../../assets/icons/ThemeSwith/dark.svg?component'
-import AutoIcon from '../../assets/icons/ThemeSwith/auto.svg?component'
-import LightIcon from '../../assets/icons/ThemeSwith/light.svg?component'
-import { ThemeSwitchData } from './ThemeSwith.interfaces'
+import DarkIcon from '../../assets/icons/ThemeSwitch/dark.svg?component'
+import AutoIcon from '../../assets/icons/ThemeSwitch/auto.svg?component'
+import LightIcon from '../../assets/icons/ThemeSwitch/light.svg?component'
+import { ThemeSwitchData } from './ThemeSwitch.interfaces'
 
 const DATA: Readonly<ThemeSwitchData[]> = [
 	{

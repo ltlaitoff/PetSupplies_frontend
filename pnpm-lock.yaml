@@ -23,10 +23,12 @@ specifiers:
   vue-eslint-parser: ^9.1.0
   vue-router: ^4.1.5
   vue-tsc: ^0.40.4
+  vuex: ^4.0.2
 
 dependencies:
   vue: 3.2.40
   vue-router: 4.1.5_vue@3.2.40
+  vuex: 4.0.2_vue@3.2.40
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': 5.39.0_xyciw6oqjoiiono4dhv3uhn5my
@@ -2410,6 +2412,15 @@ packages:
       '@vue/runtime-dom': 3.2.40
       '@vue/server-renderer': 3.2.40_vue@3.2.40
       '@vue/shared': 3.2.40
+
+  /vuex/4.0.2_vue@3.2.40:
+    resolution: {integrity: sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==}
+    peerDependencies:
+      vue: ^3.0.2
+    dependencies:
+      '@vue/devtools-api': 6.4.3
+      vue: 3.2.40
+    dev: false
 
   /webidl-conversions/3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}

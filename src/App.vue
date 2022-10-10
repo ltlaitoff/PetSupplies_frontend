@@ -1,5 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeaderMain from './components/HeaderMain/HeaderMain.vue'
+</script>
 
-<template><router-view /></template>
+<template>
+	<HeaderMain />
+	<router-view />
+</template>
 
 <style></style>

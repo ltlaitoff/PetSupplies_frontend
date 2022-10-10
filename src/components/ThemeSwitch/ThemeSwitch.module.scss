@@ -35,11 +35,9 @@
 }
 
 .substrate {
-	left: calc(38% - 28px - 3px);
 	position: absolute;
 	width: 28px;
 	height: 28px;
-	left: 0%;
 
 	transition: left 0.3s ease-out;
 	background: var(--color-light-yellow);

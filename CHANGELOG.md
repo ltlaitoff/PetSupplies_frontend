@@ -7,6 +7,8 @@
 - [x] **website:** Created Footer [#18](https://github.com/ltlaitoff/PetSupplies_frontend/issues/18)
 - [ ] **website** switch language [#21](https://github.com/ltlaitoff/PetSupplies_frontend/issues/21)
 - [ ] **website** switch theme [#22](https://github.com/ltlaitoff/PetSupplies_frontend/issues/22)
+- [ ] **adaptation** Adaptation Header for all screens [#31](https://github.com/ltlaitoff/PetSupplies_frontend/issues/31)
+- [ ] **adaptation** Adaptation Footer for all screens [#32](https://github.com/ltlaitoff/PetSupplies_frontend/issues/32)
 
 #### Components
 

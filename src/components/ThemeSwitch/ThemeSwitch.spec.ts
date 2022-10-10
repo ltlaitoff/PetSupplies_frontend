@@ -1,8 +1,8 @@
 import { shallowMount } from '@vue/test-utils'
-import ThemeSwith from './ThemeSwith.vue'
-import DATA from './ThemeSwith.data'
+import ThemeSwitch from './ThemeSwitch.vue'
+import DATA from './ThemeSwitch.data'
 
-vi.mock('./ThemeSwith.data.ts', () => ({
+vi.mock('./ThemeSwitch.data.ts', () => ({
 	default: [
 		{
 			id: 0,
@@ -22,22 +22,22 @@ vi.mock('./ThemeSwith.data.ts', () => ({
 	]
 }))
 
-describe('ThemeSwith', () => {
-	it('ThemeSwith should be in the document', () => {
-		const wrapper = shallowMount(ThemeSwith)
+describe('ThemeSwitch', () => {
+	it('ThemeSwitch should be in the document', () => {
+		const wrapper = shallowMount(ThemeSwitch)
 
 		expect(wrapper.exists()).toBeTruthy()
 	})
 
-	it('ThemeSwith should have 3 buttons', () => {
-		const wrapper = shallowMount(ThemeSwith)
+	it('ThemeSwitch should have 3 buttons', () => {
+		const wrapper = shallowMount(ThemeSwitch)
 
 		const buttons = wrapper.findAll('button')
 		expect(buttons).toHaveLength(3)
 	})
 
 	it('First button should have icon inside', () => {
-		const wrapper = shallowMount(ThemeSwith)
+		const wrapper = shallowMount(ThemeSwitch)
 		const button = wrapper.findAll('button')[0]
 		const icon = button.find('icon')
 
@@ -45,7 +45,7 @@ describe('ThemeSwith', () => {
 	})
 
 	it('Second button should have icon inside', () => {
-		const wrapper = shallowMount(ThemeSwith)
+		const wrapper = shallowMount(ThemeSwitch)
 		const button = wrapper.findAll('button')[1]
 		const icon = button.find('icon')
 
@@ -53,7 +53,7 @@ describe('ThemeSwith', () => {
 	})
 
 	it('Third button should have icon inside', () => {
-		const wrapper = shallowMount(ThemeSwith)
+		const wrapper = shallowMount(ThemeSwitch)
 		const button = wrapper.findAll('button')[2]
 		const icon = button.find('icon')
 
@@ -61,7 +61,7 @@ describe('ThemeSwith', () => {
 	})
 
 	it('On click on first button, emit.change should not be called', async () => {
-		const wrapper = shallowMount(ThemeSwith)
+		const wrapper = shallowMount(ThemeSwitch)
 
 		const button = wrapper.findAll('button')[0]
 		await button.trigger('click')
@@ -70,7 +70,7 @@ describe('ThemeSwith', () => {
 	})
 
 	it(`On click on second button, emit.change should be called with {id: ${DATA[1].id}, type: ${DATA[1].type}}`, async () => {
-		const wrapper = shallowMount(ThemeSwith)
+		const wrapper = shallowMount(ThemeSwitch)
 
 		const button = wrapper.findAll('button')[1]
 		await button.trigger('click')
@@ -82,7 +82,7 @@ describe('ThemeSwith', () => {
 	})
 
 	it(`On click on third button, emit.change should be called with {id: ${DATA[2].id}, type: ${DATA[2].type}}`, async () => {
-		const wrapper = shallowMount(ThemeSwith)
+		const wrapper = shallowMount(ThemeSwitch)
 
 		const button = wrapper.findAll('button')[2]
 		await button.trigger('click')
@@ -95,7 +95,7 @@ describe('ThemeSwith', () => {
 
 	describe('With defaultThemeId prop = 1', () => {
 		it(`With defaultThemeId prop = 1, on click on first button, emit.change should be called with {id: ${DATA[0].id}, type: ${DATA[0].type}}`, async () => {
-			const wrapper = shallowMount(ThemeSwith, {
+			const wrapper = shallowMount(ThemeSwitch, {
 				props: {
 					'default-theme-id': 1
 				}
@@ -111,7 +111,7 @@ describe('ThemeSwith', () => {
 		})
 
 		it('With defaultThemeId prop = 1, on click on second button, emit.change should not be called', async () => {
-			const wrapper = shallowMount(ThemeSwith, {
+			const wrapper = shallowMount(ThemeSwitch, {
 				props: {
 					'default-theme-id': 1
 				}
@@ -124,7 +124,7 @@ describe('ThemeSwith', () => {
 		})
 
 		it(`With defaultThemeId prop = 1, on click on third button, emit.change should be called with {id: ${DATA[2].id}, type: ${DATA[2].type}}`, async () => {
-			const wrapper = shallowMount(ThemeSwith, {
+			const wrapper = shallowMount(ThemeSwitch, {
 				props: {
 					'default-theme-id': 1
 				}
@@ -142,7 +142,7 @@ describe('ThemeSwith', () => {
 
 	describe('With defaultThemeId prop = 2', () => {
 		it(`With defaultThemeId prop = 2, on click on first button, emit.change should be called with {id: ${DATA[0].id}, type: ${DATA[0].type}}`, async () => {
-			const wrapper = shallowMount(ThemeSwith, {
+			const wrapper = shallowMount(ThemeSwitch, {
 				props: {
 					'default-theme-id': 2
 				}
@@ -158,7 +158,7 @@ describe('ThemeSwith', () => {
 		})
 
 		it(`With defaultThemeId prop = 2, on click on second button, emit.change should be called with {id: ${DATA[1].id}, type: ${DATA[1].type}}`, async () => {
-			const wrapper = shallowMount(ThemeSwith, {
+			const wrapper = shallowMount(ThemeSwitch, {
 				props: {
 					'default-theme-id': 2
 				}
@@ -174,7 +174,7 @@ describe('ThemeSwith', () => {
 		})
 
 		it('With defaultThemeId prop = 2, on click on second button, emit.change should not be called', async () => {
-			const wrapper = shallowMount(ThemeSwith, {
+			const wrapper = shallowMount(ThemeSwitch, {
 				props: {
 					'default-theme-id': 2
 				}

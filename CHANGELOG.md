@@ -3,8 +3,8 @@
 ### Features
 
 - [x] **router:** Created router with home, catalog and shopping-cart pages [#19](https://github.com/ltlaitoff/PetSupplies_frontend/issues/19)
-- [ ] **website:** Created Header [#16](https://github.com/ltlaitoff/PetSupplies_frontend/issues/16)
-- [ ] **website:** Created Footer [#18](https://github.com/ltlaitoff/PetSupplies_frontend/issues/18)
+- [x] **website:** Created Header [#16](https://github.com/ltlaitoff/PetSupplies_frontend/issues/16)
+- [x] **website:** Created Footer [#18](https://github.com/ltlaitoff/PetSupplies_frontend/issues/18)
 - [ ] **website** switch language [#21](https://github.com/ltlaitoff/PetSupplies_frontend/issues/21)
 - [ ] **website** switch theme [#22](https://github.com/ltlaitoff/PetSupplies_frontend/issues/22)
 
@@ -19,7 +19,7 @@
   - **Default:** Button without border
   - **Border:** Button with border
 
-- [ ] **ThemeSwitcher:** Created ThemeSwitcher component [#17](https://github.com/ltlaitoff/PetSupplies_frontend/issues/17)
+- [x] **ThemeSwitcher:** Created ThemeSwitcher component [#17](https://github.com/ltlaitoff/PetSupplies_frontend/issues/17)
 
 ### Utils
 

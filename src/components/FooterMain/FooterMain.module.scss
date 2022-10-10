@@ -1,0 +1,18 @@
+.footer {
+	padding: 25px 0;
+}
+
+.body {
+	padding: 0px 40px;
+	max-width: 1440px;
+	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrapper {
+	display: flex;
+	column-gap: 30px;
+}

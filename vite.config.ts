@@ -28,6 +28,9 @@ export default defineConfig({
 	},
 	test: {
 		globals: true,
-		environment: 'happy-dom'
+		environment: 'happy-dom',
+		coverage: {
+			exclude: ['src/components/**/*.interfaces.ts']
+		}
 	}
 })

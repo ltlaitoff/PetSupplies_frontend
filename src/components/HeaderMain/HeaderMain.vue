@@ -7,7 +7,7 @@ import ButtonStandart from '../Buttons/ButtonStandart.vue'
 import ButtonOutline from '../Buttons/ButtonOutline.vue'
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch.vue'
 
-import ShoppingCard from '../../assets/icons/shopping-cart.svg?component'
+import ShoppingCart from '../../assets/icons/shopping-cart.svg?component'
 </script>
 
 <template>
@@ -26,7 +26,7 @@ import ShoppingCard from '../../assets/icons/shopping-cart.svg?component'
 				:class="$style.shoppingCart"
 				to="/shopping-cart"
 			>
-				<ShoppingCard :class="$style.shoppingCartIcon" />
+				<ShoppingCart :class="$style.shoppingCartIcon" />
 			</router-link>
 			<div :class="$style.buttons">
 				<ButtonStandart>Sign in</ButtonStandart>

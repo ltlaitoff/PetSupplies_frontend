@@ -1,0 +1,60 @@
+.header {
+	padding: 25px 40px;
+}
+
+.headerBody {
+	height: 36px;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buttons {
+	display: flex;
+	column-gap: 10px;
+}
+
+.link {
+	padding-left: 10px;
+	padding-right: 10px;
+
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	transition: 0.1s all;
+
+	color: var(--color-gray);
+
+	&:hover {
+		color: var(--color-light-gray-4);
+	}
+}
+
+.shoppingCart {
+	padding-left: 10px;
+	padding-right: 10px;
+
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+	.shoppingCartIcon {
+		transition: fill 0.1s ease-out;
+
+		fill: var(--color-light-gray-4);
+	}
+
+	&:hover {
+		.shoppingCartIcon {
+			fill: var(--color-light-gray-1);
+		}
+	}
+}

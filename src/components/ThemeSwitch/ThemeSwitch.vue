@@ -2,27 +2,14 @@
 /// <reference types="vite-svg-loader" />
 
 import { ref } from 'vue'
+import { Theme } from '../../types'
 import DATA from './ThemeSwitch.data'
 
 const props = defineProps({
 	defaultThemeId: { type: Number, required: false, default: 0 }
 })
 
-const emits = defineEmits({
-	change({ id, type }: { id: number; type: string }) {
-		if (id < 0 || id > 3) {
-			console.warn('ThemeSwitch: not correct change emit id')
-			return false
-		}
-
-		if (type === '') {
-			console.warn('ThemeSwitch: not correct change emit type')
-			return false
-		}
-
-		return true
-	}
-})
+const emits = defineEmits<{ (e: 'change', data: Theme): void }>()
 
 const currentActive = ref(props.defaultThemeId)
 
@@ -31,7 +18,7 @@ function onItemClick(id: number) {
 
 	currentActive.value = id
 
-	emits('change', { id: DATA[id].id, type: DATA[id].type })
+	emits('change', { id: DATA[id].id, type: DATA[id].type } as Theme)
 }
 </script>
 

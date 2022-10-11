@@ -1,27 +1,12 @@
 import { FunctionalComponent, SVGAttributes } from 'vue'
+import { Theme } from '../../types'
 
-interface ThemeSwitchDataBase {
-	id: number
-	type: string
-	icon: FunctionalComponent<SVGAttributes>
-	additionalClasses?: string[]
-}
-
-interface ThemeSwitchDataDark extends ThemeSwitchDataBase {
-	id: 0
-	type: 'dark'
-}
-
-interface ThemeSwitchDataAuto extends ThemeSwitchDataBase {
-	id: 1
-	type: 'auto'
-}
-
-interface ThemeSwitchDataLight extends ThemeSwitchDataBase {
-	id: 2
-	type: 'light'
-}
+export type ThemeSwithIcon = FunctionalComponent<SVGAttributes>
+export type ThemeSwithAdditionaClasses = string[]
 
 export type ThemeSwitchData = Readonly<
-	ThemeSwitchDataDark | ThemeSwitchDataAuto | ThemeSwitchDataLight
+	Theme & {
+		icon: ThemeSwithIcon
+		additionalClasses?: ThemeSwithAdditionaClasses
+	}
 >

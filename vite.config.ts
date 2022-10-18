@@ -30,7 +30,7 @@ export default defineConfig({
 		globals: true,
 		environment: 'happy-dom',
 		coverage: {
-			exclude: ['src/components/**/*.interfaces.ts']
+			exclude: ['src/components/**/*.interfaces.ts', 'src/data/config.ts']
 		}
 	}
 })

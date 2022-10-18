@@ -9,12 +9,6 @@ import { setValue } from '../utils/storage/storage'
 export const key: InjectionKey<Store<RootState>> = Symbol()
 
 export const store = createStore<RootState>({
-	// state: {
-	// 	theme: {
-	// 		id: 1,
-	// 		type: 'auto'
-	// 	}
-	// },
 	modules: {
 		theme: themeModule
 	},

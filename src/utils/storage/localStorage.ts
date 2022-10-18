@@ -1,9 +1,9 @@
-const STORAGE_KEY = 'petsupplies'
+import { LOCAL_STORAGE_KEY } from '../../data'
 
 export const get = () => {
-	return localStorage.getItem(STORAGE_KEY)
+	return localStorage.getItem(LOCAL_STORAGE_KEY)
 }
 
 export const set = (value: string) => {
-	localStorage.setItem(STORAGE_KEY, value)
+	localStorage.setItem(LOCAL_STORAGE_KEY, value)
 }

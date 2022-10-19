@@ -1,7 +1,8 @@
-import { ThemeMutations, ThemeState } from './theme.interfaces'
+import { ThemeState } from './theme.interfaces'
+import { ThemeMutations } from './theme.config'
 import { themeMutations } from './theme.mutations'
 
-vi.mock('./theme.interfaces', () => ({
+vi.mock('./theme.config', () => ({
 	ThemeMutations: {
 		SET_THEME: 'mocked_set_theme'
 	}

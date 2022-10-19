@@ -2,8 +2,7 @@ import { InjectionKey } from 'vue'
 import { createStore, useStore as baseUseStore, Store } from 'vuex'
 import { RootState } from './store.interfaces'
 import { themeModule } from './theme'
-import { getValue } from '../utils/storage'
-import { setValue } from '../utils/storage/storage'
+import { getValue, setValue } from '../utils/storage'
 
 // https://vuex.vuejs.org/guide/typescript-support.html#typing-usestore-composition-function
 export const key: InjectionKey<Store<RootState>> = Symbol()

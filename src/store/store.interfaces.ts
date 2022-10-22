@@ -1,6 +1,5 @@
-// import { Theme } from '../types'
+import { ThemeState } from './theme/theme.interfaces'
 
 export interface RootState {
-	test?: ''
-	// theme: Theme
+	theme: ThemeState
 }

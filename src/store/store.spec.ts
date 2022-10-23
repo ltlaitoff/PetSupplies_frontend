@@ -11,7 +11,7 @@ vi.mock('./theme', () => ({
 	themeModule: {}
 }))
 
-describe('store', () => {
+describe.todo('store', () => {
 	afterEach(() => {
 		vi.clearAllMocks()
 	})

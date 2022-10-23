@@ -59,7 +59,7 @@ const mountStore = (
 	})
 }
 
-describe('ThemeSwitch', () => {
+describe.todo('ThemeSwitch', () => {
 	it('ThemeSwitch should be in the document', () => {
 		const store = mountStore()
 

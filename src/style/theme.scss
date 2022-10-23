@@ -1,35 +1,45 @@
-@media (prefers-color-scheme: light) {
-	:root {
-		--color-light-yellow: #fcefc0;
-		--color-yellow: #fed955;
-
-		--color-light-gray-0: #f6f6f6;
-		--color-light-gray-4: #aaaaaa;
-		--color-light-gray-1: #cecece;
-		--color-gray: #7a7a7a;
-
-		--color-dark-gray: #505050;
-		--color-white: #ffffff;
-		--color-black: #000000;
-
-		--color-focus-visible: #00cdfa;
-	}
+@mixin lightColorScheme {
+	--color-light-yellow: #fcefc0;
+	--color-light-gray-0: #f6f6f6;
+	--color-light-gray-4: #aaaaaa;
+	--color-light-gray-1: #cecece;
+	--color-gray: #7a7a7a;
+	--color-yellow: #fed955;
+	--color-white: #ffffff;
+	--color-dark-gray: #505050;
+	--color-focus-visibly: #00cdfa;
+	--color-black: #000000;
+	--color-on-light-yellow: #7a7a7a;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-light-yellow: #fcefc0;
-		--color-yellow: #fed955;
+@mixin darkColorScheme {
+	--color-light-yellow: #fcd34d;
+	--color-light-gray-0: #3f3f46;
+	--color-light-gray-4: #e8e8e8;
+	--color-light-gray-1: #52525b;
+	--color-gray: #f2f2f2;
+	--color-yellow: #fbbf24;
+	--color-white: #27272a;
+	--color-dark-gray: #e4e4e4;
+	--color-focus-visibly: #00cdfa;
+	--color-black: #000000;
+	--color-on-light-yellow: #4b5563;
+}
 
-		--color-light-gray-0: #f6f6f6;
-		--color-light-gray-4: #aaaaaa;
-		--color-light-gray-1: #cecece;
-		--color-gray: #7a7a7a;
+:root[data-color-theme='dark'] {
+	@include darkColorScheme;
+}
 
-		--color-dark-gray: #505050;
-		--color-white: #000000;
-		--color-black: #ffffff;
+:root[data-color-theme='light'] {
+	@include lightColorScheme;
+}
 
-		--color-focus-visible: #00cdfa;
+:root[data-color-theme='auto'] {
+	@media (prefers-color-scheme: light) {
+		@include lightColorScheme;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		@include darkColorScheme;
 	}
 }

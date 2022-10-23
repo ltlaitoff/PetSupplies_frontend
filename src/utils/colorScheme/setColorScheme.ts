@@ -6,9 +6,5 @@ export function setColorScheme(
 ) {
 	if (element === null) return
 
-	if (theme === 'auto') {
-		element.style.removeProperty('color-scheme')
-	}
-
-	element.style.setProperty('color-scheme', theme)
+	element.dataset.colorTheme = theme
 }

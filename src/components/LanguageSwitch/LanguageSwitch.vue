@@ -1,37 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { LANGUAGES, LanguageType } from './LanguageSwitch.interfaces'
+import { ref, watch } from 'vue'
+import { LANGUAGES } from './LanguageSwitch.interfaces'
+import { useStore } from '../../store/store'
+import { LanguageType } from '../../types/languages'
+import { LanguageMutations } from '../../store/language'
 
-const props = defineProps({
-	defaultLanguage: { type: Number, required: false, default: 0 }
-})
+const store = useStore()
 
-const emits = defineEmits({
-	change({ id, languageCode }: LanguageType) {
-		if (id < 0 || id > 2) {
-			console.warn('LanguageSwicth: not correct change emit id')
-			return false
-		}
-
-		// @ts-expect-error Check
-		if (languageCode === '') {
-			console.warn('LanguageSwicth: not correct change emit languageCode')
-			return false
-		}
-
-		return true
-	}
-})
-
-const currentActive = ref(props.defaultLanguage)
+const currentActive = ref(store.getters.getLanguage.id)
 
 function onItemClick(id: LanguageType['id']) {
 	if (currentActive.value === id) return
 
 	currentActive.value = id
 
-	emits('change', LANGUAGES[id])
+	store.commit(LanguageMutations.SET_LANGUAGE, LANGUAGES[id])
 }
+
+watch(store.getters.getLanguage, () => {
+	currentActive.value = store.getters.getLanguage.id
+})
 </script>
 
 <template>

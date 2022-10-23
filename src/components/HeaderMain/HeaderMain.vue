@@ -8,6 +8,18 @@ import ButtonOutline from '../Buttons/ButtonOutline.vue'
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch.vue'
 
 import ShoppingCart from '../../assets/icons/shopping-cart.svg?component'
+import { useStore } from '../../store'
+import { ref, watch } from 'vue'
+import { LanguageState } from '../../store/language/language.interfaces'
+
+const store = useStore()
+const languageCode = ref(
+	(store.getters.getLanguage as LanguageState).languageCode
+)
+
+watch(store.getters.getLanguage, () => {
+	languageCode.value = (store.getters.getLanguage as LanguageState).languageCode
+})
 </script>
 
 <template>
@@ -18,7 +30,7 @@ import ShoppingCart from '../../assets/icons/shopping-cart.svg?component'
 				:class="$style.link"
 				to="/catalog"
 			>
-				Catalog
+				{{ languageCode === 'EN' ? 'Catalog' : 'Каталог' }}
 			</router-link>
 			<SearchBox />
 			<LanguageSwitch />
@@ -29,8 +41,12 @@ import ShoppingCart from '../../assets/icons/shopping-cart.svg?component'
 				<ShoppingCart :class="$style.shoppingCartIcon" />
 			</router-link>
 			<div :class="$style.buttons">
-				<ButtonStandart>Sign in</ButtonStandart>
-				<ButtonOutline>Sign up</ButtonOutline>
+				<ButtonStandart>
+					{{ languageCode === 'EN' ? 'Sign in' : 'Вхід' }}
+				</ButtonStandart>
+				<ButtonOutline>
+					{{ languageCode === 'EN' ? 'Sign up' : 'Реєстрація' }}
+				</ButtonOutline>
 			</div>
 		</div>
 	</header>

@@ -17,7 +17,7 @@ vi.mock(`./LanguageSwitch.interfaces.ts`, () => ({
 	]
 }))
 
-describe(`LanguageSwitch`, () => {
+describe.todo(`LanguageSwitch`, () => {
 	it(`LanguageSwith should be in the document`, () => {
 		const wrapper = mount(LanguageSwith)
 

@@ -11,6 +11,7 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;
+	z-index: 1;
 }
 
 .item {
@@ -31,7 +32,7 @@
 }
 
 .activeItem {
-	fill: var(--color-gray);
+	fill: var(--color-on-light-yellow);
 }
 
 .substrate {

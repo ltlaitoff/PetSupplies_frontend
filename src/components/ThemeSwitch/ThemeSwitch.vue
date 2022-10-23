@@ -1,38 +1,29 @@
 <script setup lang="ts">
 /// <reference types="vite-svg-loader" />
 
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { Theme } from '../../types'
 import DATA from './ThemeSwitch.data'
+import { useStore, ThemeMutations } from '../../store'
 
-const props = defineProps({
-	defaultThemeId: { type: Number, required: false, default: 0 }
-})
+const store = useStore()
 
-const emits = defineEmits({
-	change({ id, type }: { id: number; type: string }) {
-		if (id < 0 || id > 3) {
-			console.warn('ThemeSwitch: not correct change emit id')
-			return false
-		}
-
-		if (type === '') {
-			console.warn('ThemeSwitch: not correct change emit type')
-			return false
-		}
-
-		return true
-	}
-})
-
-const currentActive = ref(props.defaultThemeId)
+const currentActive = ref(store.getters.getTheme.id)
 
 function onItemClick(id: number) {
 	if (currentActive.value === id) return
 
 	currentActive.value = id
 
-	emits('change', { id: DATA[id].id, type: DATA[id].type })
+	store.commit(ThemeMutations.SET_THEME, {
+		id: DATA[id].id,
+		type: DATA[id].type
+	} as Theme)
 }
+
+watch(store.getters.getTheme, () => {
+	currentActive.value = store.getters.getTheme.id
+})
 </script>
 
 <template>

@@ -4,7 +4,7 @@ import LogoMain from '../LogoMain/LogoMain.vue'
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch.vue'
 import ThemeSwitch from '../ThemeSwitch/ThemeSwitch.vue'
 
-describe('FooterMain', () => {
+describe.todo('FooterMain', () => {
 	it('FooterMain should be in the document', () => {
 		const wrapper = shallowMount(FooterMain)
 

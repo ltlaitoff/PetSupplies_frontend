@@ -5,7 +5,7 @@ import SearchBox from './SearchBox.vue'
 
 import Search from '../../assets/icons/search.svg?component'
 
-describe('SearchBox', () => {
+describe.todo('SearchBox', () => {
 	describe('Element exists', () => {
 		it('SearchBox should be in the document', () => {
 			const wrapper = mount(SearchBox)

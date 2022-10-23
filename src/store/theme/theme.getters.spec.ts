@@ -13,6 +13,7 @@ describe('store/theme.getters', () => {
 		'themeGetters.getTheme with store = {id: $id, type: $type} should return {id: $id, type: $type}',
 		store => {
 			expect(
+				// @ts-expect-error Just yes
 				themeGetters.getTheme(store as ThemeState, null, {}, null)
 			).toEqual(store)
 		}

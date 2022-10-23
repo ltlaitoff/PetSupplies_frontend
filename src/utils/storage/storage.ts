@@ -2,6 +2,13 @@ import { set as setLocalStorage, get as getLocalStorage } from './localStorage'
 
 const defaultGetValue = {}
 
+export const initialize = () => {
+	const value = getValue()
+	if (value === defaultGetValue) {
+		setValue(defaultGetValue)
+	}
+}
+
 export const getValue = (): object => {
 	const result = getLocalStorage()
 	if (result === null) {

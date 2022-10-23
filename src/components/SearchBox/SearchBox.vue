@@ -3,6 +3,8 @@
 import Search from '../../assets/icons/search.svg?component'
 
 import { ref, watch, defineEmits } from 'vue'
+import { useStore } from '../../store'
+import { LanguageState } from '../../store/language/language.interfaces'
 
 const emit = defineEmits({
 	submit: (value: string) => {
@@ -48,6 +50,15 @@ watch(inputText, async (newText: string) => {
 
 	inputError.value = false
 })
+
+const store = useStore()
+const languageCode = ref(
+	(store.getters.getLanguage as LanguageState).languageCode
+)
+
+watch(store.getters.getLanguage, () => {
+	languageCode.value = (store.getters.getLanguage as LanguageState).languageCode
+})
 </script>
 
 <template>
@@ -68,7 +79,9 @@ watch(inputText, async (newText: string) => {
 				ref="inputTemplate"
 				v-model="inputText"
 				:class="[$style.input, { [$style.inputError]: inputError }]"
-				placeholder="Write something"
+				:placeholder="
+					languageCode === 'EN' ? 'Write something' : 'Напишіть щось'
+				"
 				@keydown.enter.prevent="onKeyDownEnter"
 			/>
 		</label>

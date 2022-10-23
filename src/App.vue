@@ -7,7 +7,8 @@ import { setColorScheme } from './utils/colorScheme'
 import { onMounted, ref } from 'vue'
 import {
 	getValue as getValueFromStorage,
-	setValue as setValueToStorage
+	setValue as setValueToStorage,
+	initialize as initializeStore
 } from './utils/storage'
 
 const refToRoot = ref<HTMLDivElement | null>(null)
@@ -17,13 +18,16 @@ const data = getValueFromStorage()
 
 store.commit('initialiseStore', data)
 
+initializeStore()
 store.subscribe((_, state) => {
-	setColorScheme(state.theme.type, document.documentElement)
+	const stateTheme = state?.theme?.type || 'auto'
+	setColorScheme(stateTheme, document.documentElement)
 	setValueToStorage(state)
 })
 
 onMounted(() => {
-	setColorScheme((data as RootState).theme.type, document.documentElement)
+	const stateTheme = (data as RootState).theme?.type || 'auto'
+	setColorScheme(stateTheme, document.documentElement)
 })
 </script>
 

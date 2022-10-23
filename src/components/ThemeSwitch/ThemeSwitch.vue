@@ -21,12 +21,9 @@ function onItemClick(id: number) {
 	} as Theme)
 }
 
-watch(
-	() => store.getters.getTheme,
-	() => {
-		currentActive.value = store.getters.getTheme.id
-	}
-)
+watch(store.getters.getTheme, () => {
+	currentActive.value = store.getters.getTheme.id
+})
 </script>
 
 <template>

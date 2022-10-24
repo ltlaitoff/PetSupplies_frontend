@@ -11,6 +11,9 @@ import ShoppingCart from '../../assets/icons/shopping-cart.svg?component'
 import { useStore } from '../../store'
 import { ref, watch } from 'vue'
 import { LanguageState } from '../../store/language/language.interfaces'
+import BurgerButton from '../BurgerButton/BurgerButton.vue'
+
+const opened = ref(true)
 
 const store = useStore()
 const languageCode = ref(
@@ -23,7 +26,9 @@ watch(store.getters.getLanguage, () => {
 </script>
 
 <template>
-	<header :class="$style.header">
+	<header
+		:class="[$style.header, opened === true ? $style.headerFullScreen : '']"
+	>
 		<div :class="$style.headerBody">
 			<LogoMain />
 			<router-link
@@ -32,8 +37,8 @@ watch(store.getters.getLanguage, () => {
 			>
 				{{ languageCode === 'EN' ? 'Catalog' : 'Каталог' }}
 			</router-link>
-			<SearchBox />
-			<LanguageSwitch />
+			<SearchBox :class="$style.search" />
+			<LanguageSwitch :class="$style.language" />
 			<router-link
 				:class="$style.shoppingCart"
 				to="/shopping-cart"
@@ -48,6 +53,11 @@ watch(store.getters.getLanguage, () => {
 					{{ languageCode === 'EN' ? 'Sign up' : 'Реєстрація' }}
 				</ButtonOutline>
 			</div>
+			<BurgerButton
+				:activated="opened"
+				:class="$style.burger"
+				@click="opened = !opened"
+			/>
 		</div>
 	</header>
 </template>

@@ -1,4 +1,5 @@
 .header {
+	transition: all 0.5s;
 	padding: 25px 0;
 	background-color: var(--color-white);
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -12,11 +13,17 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	column-gap: 15px;
 }
 
 .buttons {
+	white-space: nowrap;
 	display: flex;
-	column-gap: 10px;
+	column-gap: 15px;
+
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
 }
 
 .link {
@@ -39,6 +46,10 @@
 	&:hover {
 		color: var(--color-light-gray-4);
 	}
+
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
 }
 
 .shoppingCart {
@@ -59,5 +70,63 @@
 		.shoppingCartIcon {
 			fill: var(--color-light-gray-1);
 		}
+	}
+
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
+}
+
+.search {
+	width: 100%;
+	max-width: 430px;
+
+	@media screen and (max-width: 1200px) {
+		max-width: 400px;
+	}
+
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
+}
+
+.language {
+	@media screen and (max-width: 1000px) {
+		display: none;
+	}
+}
+
+.headerFullScreen {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.headerBody {
+		height: 400px;
+
+		flex-direction: column;
+		align-items: center;
+		row-gap: 40px;
+
+		* {
+			display: inline-block;
+		}
+	}
+
+	.language {
+		display: inline-flex;
+	}
+
+	.burger {
+		position: absolute;
+		top: 40px;
+		right: 40px;
 	}
 }

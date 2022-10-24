@@ -16,4 +16,8 @@
 	&:hover {
 		color: var(--color-light-gray-4);
 	}
+
+	@media screen and (max-width: 1000px) {
+		font-size: 28px;
+	}
 }

@@ -1,4 +1,4 @@
-## [0.1.0](https://github.com/ltlaitoff/PetSupplies_frontend/compare/v0.1.0...v0.0.0) (25.10.2022)
+## [0.1.0](https://github.com/ltlaitoff/PetSupplies_frontend/compare/v0.0.0...v0.1.0) (25.10.2022)
 
 ### Features
 

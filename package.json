@@ -7,24 +7,35 @@
 		"build": "vue-tsc --noEmit && vite build",
 		"preview": "vite preview",
 		"lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore --fix src",
-		"format": "prettier .  --write"
+		"format": "prettier .  --write",
+		"test": "vitest",
+		"test-ui": "vitest --ui",
+		"coverage": "vitest run --coverage"
 	},
 	"dependencies": {
-		"vue": "^3.2.37"
+		"vue": "^3.2.37",
+		"vue-router": "^4.1.5",
+		"vuex": "^4.0.2"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.38.1",
 		"@typescript-eslint/parser": "^5.38.1",
 		"@vitejs/plugin-vue": "^3.1.0",
+		"@vitest/coverage-c8": "^0.24.0",
+		"@vitest/ui": "^0.24.0",
+		"@vue/test-utils": "^2.1.0",
 		"eslint": "^8.24.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-vue": "^9.5.1",
+		"happy-dom": "^7.4.0",
 		"prettier": "2.7.1",
 		"sass": "^1.55.0",
 		"typescript": "^4.6.4",
 		"vite": "^3.1.0",
 		"vite-plugin-eslint": "^1.8.1",
+		"vite-svg-loader": "^3.6.0",
+		"vitest": "^0.24.0",
 		"vue-eslint-parser": "^9.1.0",
 		"vue-tsc": "^0.40.4"
 	}

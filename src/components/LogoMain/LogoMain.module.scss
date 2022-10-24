@@ -1,0 +1,25 @@
+.logo {
+	display: inline-block;
+	padding: 10px;
+
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 36px;
+
+	color: var(--color-gray);
+	transition: 0.2s all;
+
+	.highlight {
+		color: var(--color-yellow);
+	}
+
+	white-space: nowrap;
+
+	&:hover {
+		color: var(--color-light-gray-4);
+	}
+
+	@media screen and (max-width: 1000px) {
+		font-size: 28px;
+	}
+}

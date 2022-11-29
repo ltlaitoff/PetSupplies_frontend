@@ -10,6 +10,10 @@
 	--color-focus-visible: #00cdfa;
 	--color-black: #000000;
 	--color-on-light-yellow: #7a7a7a;
+	--color-red-light: #f68282;
+	--color-cat: #c05efd;
+	--color-dog: #fdaa5e;
+	--color-card-label-new: #b0dd66;
 }
 
 @mixin darkColorScheme {
@@ -24,6 +28,10 @@
 	--color-focus-visible: #00cdfa;
 	--color-black: #000000;
 	--color-on-light-yellow: #4b5563;
+	--color-red-light: #f68282;
+	--color-cat: #c05efd;
+	--color-dog: #fdaa5e;
+	--color-card-label-new: #b0dd66;
 }
 
 :root[data-color-theme='dark'] {

@@ -6,6 +6,7 @@ const NotFoundPage = () => import('../pages/NotFoundPage/NotFoundPage.vue')
 const ShoppingCart = () => import('../pages/ShoppingCart/ShoppingCart.vue')
 const PerformancePage = () =>
 	import('../pages/PerformancePage/PerformancePage.vue')
+const ProductPage = () => import('../pages/ProductPage/ProductPage.vue')
 
 const routes = [
 	{
@@ -23,6 +24,12 @@ const routes = [
 		name: 'shoppingCart',
 		component: ShoppingCart
 	},
+	{
+		path: '/product/:id',
+		name: 'product',
+		component: ProductPage
+	},
+
 	{
 		path: '/perf',
 		name: 'Performance Test',

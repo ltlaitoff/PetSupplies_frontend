@@ -1,3 +1,13 @@
 .h1 {
 	font-size: 24px;
 }
+
+.cards {
+	max-width: 1440px;
+	margin: 40px auto;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 30px;
+}

@@ -1,0 +1,13 @@
+.stars {
+	display: flex;
+	column-gap: 4px;
+}
+
+.star {
+	height: 22px;
+	fill: var(--color-light-gray-1);
+}
+
+.active {
+	fill: var(--color-yellow);
+}

@@ -1,0 +1,104 @@
+.card {
+	position: relative;
+	display: inline-block;
+	background-color: var(--color-white);
+	width: 310px;
+	border-radius: 5px;
+}
+
+.labels {
+}
+
+.head {
+	border-radius: 5px 5px 0px 0px;
+	height: 270px;
+	object-fit: cover;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.body {
+	padding: 15px 15px 15px 20px;
+	display: flex;
+	row-gap: 15px;
+	flex-direction: column;
+	border-radius: 0px 0px 5px 5px;
+
+	&Header {
+		display: flex;
+		row-gap: 12px;
+		flex-direction: column;
+	}
+
+	&Footer {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+
+	color: var(--color-dark-gray);
+}
+
+.description {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+
+	color: var(--color-gray);
+}
+
+.priceBlock {
+	display: flex;
+	column-gap: 7px;
+	align-items: center;
+}
+
+.currentPrice {
+	background: linear-gradient(263.52deg, #7959d3 6.54%, #ac59d3 110.06%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: tsransparent;
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 27px;
+
+	&Discount {
+		background: linear-gradient(263.52deg, #d35959 6.54%, #f19595 110.06%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+}
+
+.oldPrice {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+	text-decoration-line: line-through;
+
+	/* light-gray-4 */
+
+	color: #aaaaaa;
+}
+
+.stars {
+}

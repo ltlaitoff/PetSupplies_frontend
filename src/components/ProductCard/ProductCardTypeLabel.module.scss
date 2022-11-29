@@ -1,0 +1,28 @@
+.typeLabel {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	padding: 3px 10px;
+
+	border-radius: 3px 0px;
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: var(--color-white);
+}
+
+.dogs {
+	background-color: var(--color-dog);
+}
+
+.cats {
+	background-color: var(--color-cat);
+}
+
+.all {
+	background-color: var(--color-card-label-new);
+}
